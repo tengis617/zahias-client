@@ -1,0 +1,47 @@
+{
+  "name": "zahias",
+  "version": "1.0.0",
+  "description": "an online shopping business",
+  "main": "index.js",
+  "repository": "github.com/tengis617/zahias",
+  "author": "Tengis Bat-Ulzii",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-inferno": "^3.2.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "compression-webpack-plugin": "^1.0.0",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.6.1",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "yarn build && aws s3 rm s3://zahias.com --recursive && aws s3 sync dist/ s3://zahias.com"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bulma": "^0.5.2",
+    "chart.js": "^2.7.0",
+    "font-awesome": "^4.7.0",
+    "inferno": "^3.8.2",
+    "inferno-compat": "^3.9.0",
+    "inferno-component": "^3.8.2",
+    "inferno-router": "^3.8.2",
+    "react-chartjs-2": "^2.6.2"
+  }
+}

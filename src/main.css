@@ -1,0 +1,26 @@
+.bg-white {
+  background: white;
+}
+.bg-primary {
+  background: #2980b9;
+}
+.bg-blue {
+  background: #2980b9;
+}
+
+.bg-green {
+  background: #2ecc71;
+}
+
+.bg-dark-blue {
+  background: #34495e;
+}
+
+.bg-whitesmoke {
+  background: whitesmoke;
+}
+
+.logo {
+  font-size: 5rem!important;
+  font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,8 @@
+.product {
+  box-shadow: none!important;
+  /* background: whitesmoke!important; */
+}
+
+.book {
+  padding: 30px;
+}
